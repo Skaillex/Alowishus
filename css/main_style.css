@@ -3,6 +3,8 @@ body {
   margin: 0;
   border: 0;
   padding: 0;
+  font-family: "Jost", sans-serif;
+  background-color: #EEEFF1;
 }
 
 a {
@@ -17,20 +19,29 @@ header {
   padding: 27px 100px 0px 100px;
   display: flex;
   align-items: center;
-  font-family: "Jost", sans-serif;
   font-weight: 500;
   justify-content: space-between;
-  background-color: #EEEFF1;
 }
 header nav ul {
   display: flex;
   align-items: center;
   list-style-type: none;
-  gap: 40px;
+  gap: 30px;
 }
 header ul a {
   color: black;
   font-size: 15px;
+  padding: 10px;
+}
+header ul a:hover {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+header ul a:not(:hover) {
+  box-shadow: none;
+  transition: 0.3s ease;
+  border-radius: 0px;
 }
 
 .header_menu {
@@ -46,6 +57,7 @@ header ul a {
   border-radius: 50%;
   background-color: white;
   overflow: hidden;
+  cursor: pointer;
 }
 .header_menu__shop img {
   position: absolute;
@@ -53,16 +65,157 @@ header ul a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.header_menu__shop:hover {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  animation: shop-rotate 2s;
+}
+.header_menu__shop:not(:hover) {
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
 
+@keyframes shop-rotate {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: none;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  }
+}
 .btn {
   background-color: black;
   border-radius: 63px;
+  text-align: center;
+  text-transform: uppercase;
   margin-left: 20px;
   padding: 15px 30px;
   color: white;
   text-align: center;
 }
 
+.btn:hover {
+  background-color: black;
+  border-radius: 63px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease;
+}
+
+.btn:not(:hover) {
+  box-shadow: none;
+  transition: 0.5s ease;
+}
+
 main {
   background-image: linear-gradient(to bottom right, rgb(255, 255, 255) 0%, rgba(243, 244, 245, 0.2) 15%, rgb(243, 244, 245) 30%, rgba(243, 244, 245, 0) 45%, rgba(243, 244, 245, 0.68) 60%, rgb(243, 244, 245) 75%, rgb(255, 255, 255) 100%);
+}
+
+.main_content {
+  margin-top: 1vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px 4.44vw;
+}
+
+@media screen and (max-width: 1200px) {
+  .header_menu nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .header_menu {
+    margin-top: 3vw;
+  }
+  .header_menu__shop {
+    margin: 0;
+  }
+}
+.main_content {
+  background-color: #EEEFF1;
+}
+
+.main_content__main_text {
+  width: 40%;
+}
+.main_content__main_text h1 {
+  font-weight: 800;
+  line-height: 8vw;
+  font-size: 7vw;
+  margin: 8vw 0px 0px;
+}
+.main_content__main_text p {
+  margin-top: 30px;
+  font-size: 1.67vw;
+  color: #64646A;
+  font-weight: 400;
+}
+
+.coffee img {
+  margin-top: 4vw;
+  width: 600px;
+}
+
+.main_content__main_text_button {
+  background-color: black;
+  border-radius: 63px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+  padding: 20px 40px;
+  color: white !important;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 2100px) {
+  .coffee img {
+    width: 30vw;
+  }
+  header nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+  }
+  header ul a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+  }
+  .btn {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .main_content__main_text_button {
+    background-color: black;
+    border-radius: 63px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 70px;
+    color: white;
+    line-height: 30px;
+  }
+}
+.main_content__button {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.main_content__button a {
+  font-size: 1.3rem;
+  color: #1B1B1D;
+  font-weight: 500;
+  border-bottom: 2px solid #1B1B1D;
 }/*# sourceMappingURL=main_style.css.map */
