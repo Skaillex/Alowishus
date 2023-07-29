@@ -252,6 +252,9 @@ main {
   .main_content__main_text {
     width: 80%;
   }
+  .coffee {
+    animation: none;
+  }
   .coffee img {
     margin-top: 4vw;
     width: 100%;
