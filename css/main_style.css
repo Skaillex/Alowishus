@@ -64,5 +64,5 @@ header ul a {
 }
 
 main {
-  background-image: linear-gradient(to bottom right, rgb(255, 255, 255) 0%, rgba(243, 244, 245, 0.2) 15%, rgb(243, 244, 245) 30%, rgba(0, 255, 0, 0.4) 45%, rgba(0, 0, 255, 0.2) 60%, rgba(102, 0, 255, 0.4) 75%, rgba(255, 0, 255, 0.6) 100%);
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255) 0%, rgba(243, 244, 245, 0.2) 15%, rgb(243, 244, 245) 30%, rgba(243, 244, 245, 0) 45%, rgba(243, 244, 245, 0.68) 60%, rgb(243, 244, 245) 75%, rgb(255, 255, 255) 100%);
 }/*# sourceMappingURL=main_style.css.map */
