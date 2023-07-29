@@ -141,6 +141,7 @@ main{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     justify-content: space-evenly;
     padding: 0px 4.44vw;
 }
@@ -178,7 +179,7 @@ main{
         font-weight: 800;
         line-height: 8vw;
         font-size:7vw;
-        margin: 8vw 0px 0px;
+        margin: 2vw 0px 0px;
     }
 
     p{
@@ -201,10 +202,10 @@ main{
 
 @keyframes moveCoffee {
     0% {
-        top: 0;
+        top: 35px;
     }
     100% {
-        top: -40px; /* Новое положение картинки при анимации */
+        top: -10px; /* Новое положение картинки при анимации */
     }
 }
 
