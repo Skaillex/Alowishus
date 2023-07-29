@@ -189,10 +189,22 @@ main{
     }
 }
 
-.coffee{
+.coffee {
+    position: relative;
+    width: 600px;
+    animation: moveCoffee 1.5s infinite alternate;
+
     img{
-        margin-top: 4vw;
-        width: 600px;
+        width: 100%;
+    }
+}
+
+@keyframes moveCoffee {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -40px; /* Новое положение картинки при анимации */
     }
 }
 
