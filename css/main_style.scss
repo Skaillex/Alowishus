@@ -359,9 +359,9 @@ main{
 
     article{
         background-image: linear-gradient(
-            to bottom right, /* Измененное направление градиента */
-            rgb(255, 255, 255,100%) 0%,
-            rgb(255, 255, 255,0%) 100%);
+        to bottom right, /* Измененное направление градиента */
+        rgb(255, 255, 255,100%) 0%,
+        rgb(255, 255, 255,0%) 100%);
         border-radius: 24px;
         width: 350px;
         padding: 40px 25px;
@@ -379,7 +379,7 @@ main{
 
         p{
             @include p;
-            font-size: 24px;
+            font-size: 22px;
             line-height: 30px;
             margin: 15px 0 0 0;
         }
