@@ -376,4 +376,13 @@ main {
 .card_menu article a:not(:hover) {
   box-shadow: none;
   transition: 0.5s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .card_menu {
+    padding: 50px 15px;
+  }
+  .fon_coffee {
+    display: none;
+  }
 }/*# sourceMappingURL=main_style.css.map */
