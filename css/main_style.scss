@@ -169,12 +169,11 @@ main{
 
 @mixin h1{
     font-weight: 800;
-    line-height: 7vw;
-    font-size:6vw;
+    font-size:64px;
 }
 
 @mixin p{
-    font-size: 1.3vw;
+    font-size: 24px;
     color: #64646A;
     font-weight: 400;
 }
@@ -190,6 +189,8 @@ main{
     h1{
         @include h1;
         margin: 2vw 0px 0px;
+        font-size: 7vw;
+        line-height: 8vw;
     }
 
     p{
@@ -275,6 +276,7 @@ main{
 }
 
 @media screen and (max-width:1100px) {
+    
     .main_content__main_text {
         width: 80%;
     }
@@ -413,6 +415,81 @@ main{
     .header_menu{
         display: none;
     }
+}
+
+.favourite_coffee_content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 21px;
+    padding: 50px;
+}
+
+.favourite_coffee_content__text{
+    width: 35vw;
+
+    h1{
+        @include h1;
+        font-size: 64px;
+        line-height: 70px;
+    }
+
+    p{
+        @include p;
+        font-size: 24px;
+    }
+
+    a{
+        @include button;
+        display: block;
+        width: 10rem;
+        margin-top: 50px;
+        color: white;
+        padding: 15px 35px;
+    }
+}
+
+.favourite_coffee_content__image{
+    img{
+        width: 100%;
+    }
+}
+
+.favourite_coffee_content__image {
+    position: relative;
+    animation: moveCoffee 1.5s infinite alternate;
+
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1450px) {
+
+    .favourite_coffee_content{
+        padding: 10px;
+    }
+
+    .favourite_coffee_content__text{
+        width: 90vw;
+    }
+    
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    a{
+        margin: 0 auto;
+    }
+
+.favourite_coffee_content__image {
+    animation: none;
+}
 }
 
 
