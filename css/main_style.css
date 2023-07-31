@@ -118,7 +118,7 @@ main {
   flex-wrap: wrap;
   margin-bottom: 50px;
   justify-content: space-evenly;
-  padding: 0px 4.44vw 3vw;
+  padding: 0px 4.44vw 3vw 0;
 }
 
 @media screen and (max-width: 1200px) {
