@@ -502,6 +502,9 @@ main{
 
 
 .instant_coffee {
+    position: relative;
+
+
     &__body {
         display: flex;
         align-items: center;
@@ -512,6 +515,8 @@ main{
     }
 }
 .instant_coffee_body {
+
+    z-index: 1;
 
     &__info {
 
@@ -544,7 +549,32 @@ main{
     }
 }
 
+.instant_coffee__background {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: 0;
+}
+
+@media screen and (min-width:2000px) {
+    .instant_coffee__background {
+        img{
+            width: 600px;
+        }
+    }
+
+    .fon_coffee{
+        img{
+            width: 600px;
+        }
+    }
+}
+
 @media screen and (max-width:1300px) {
+
+    .instant_coffee__background{
+        display: none;
+    }
 
     .instant_coffee {
         &__body {
@@ -584,6 +614,8 @@ main{
         }
     }
 }
+
+
 
 
 

@@ -470,6 +470,9 @@ main {
     animation: none;
   }
 }
+.instant_coffee {
+  position: relative;
+}
 .instant_coffee__body {
   display: flex;
   align-items: center;
@@ -479,6 +482,9 @@ main {
   padding: 0 0 0 30px;
 }
 
+.instant_coffee_body {
+  z-index: 1;
+}
 .instant_coffee_body__info {
   width: 40em;
 }
@@ -518,7 +524,25 @@ main {
   width: 100%;
 }
 
+.instant_coffee__background {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  z-index: 0;
+}
+
+@media screen and (min-width: 2000px) {
+  .instant_coffee__background img {
+    width: 600px;
+  }
+  .fon_coffee img {
+    width: 600px;
+  }
+}
 @media screen and (max-width: 1300px) {
+  .instant_coffee__background {
+    display: none;
+  }
   .instant_coffee__body {
     display: flex;
     align-items: center;
