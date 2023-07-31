@@ -143,7 +143,7 @@ main{
     flex-wrap: wrap;
     margin-bottom: 50px;
     justify-content: space-evenly;
-    padding: 0px 4.44vw;
+    padding: 0px 4.44vw 3vw;
 }
 
 @media screen and (max-width:1200px) {
@@ -404,6 +404,18 @@ main{
 }
 
 @media screen and (max-width:700px) {
+
+    .cafe_menu__text{
+    
+        h1{
+            line-height: 80px;
+        }
+        p{
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+
     .card_menu{
         padding: 50px 15px;
     }
@@ -479,10 +491,6 @@ main{
         text-align: center;
     }
 
-    p{
-        text-align: center;
-    }
-
     a{
         margin: 0 auto;
     }
@@ -491,6 +499,105 @@ main{
     animation: none;
 }
 }
+
+
+.instant_coffee {
+    &__body {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        padding: 0 0 0 30px;
+    }
+}
+.instant_coffee_body {
+
+    &__info {
+
+        width: 40em;
+
+        h1{
+            @include h1;
+            margin: 0;
+        }
+
+        p{
+            @include p;
+            margin: 30px 0 0 0;
+        }
+
+        a{
+            @include button;
+            display: block;
+            width:15em;
+            margin-top: 60px;
+            color: white;
+            padding: 15px 30px;
+        }
+    }
+
+    &__image {
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1300px) {
+
+    .instant_coffee {
+        &__body {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            padding: 0 30px 0 30px;
+        }
+    }
+    .instant_coffee_body {
+
+        &__info {
+    
+            width: 40em;
+    
+            h1{
+                @include h1;
+                margin: 0;
+            }
+    
+            p{
+                @include p;
+                margin: 30px 0 0 0;
+                text-align: center
+            }
+    
+            a{
+                @include button;
+                display: block;
+                width:15em;
+                margin-top: 60px;
+                color: white;
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
