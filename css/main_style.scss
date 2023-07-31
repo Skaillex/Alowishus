@@ -616,6 +616,28 @@ main{
 }
 
 
+.card_coffee {
+
+    margin-top: 228px;
+
+    &__title {
+        h1{
+            @include h1;
+            margin: 0;
+            text-align: center
+        }
+
+        p{
+            @include p;
+            margin: 0;
+            margin-top: 24px;
+            text-align: center;
+        }
+    }
+}
+
+
+
 
 
 
