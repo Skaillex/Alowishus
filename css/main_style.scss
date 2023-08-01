@@ -485,15 +485,16 @@ main{
 
     .favourite_coffee_content__text{
         width: 90vw;
+
+        h1{
+            text-align: center;
+        }
+    
+        a{
+            margin: 0 auto;
+        }
     }
     
-    h1{
-        text-align: center;
-    }
-
-    a{
-        margin: 0 auto;
-    }
 
 .favourite_coffee_content__image {
     animation: none;
@@ -503,6 +504,7 @@ main{
 
 .instant_coffee {
     position: relative;
+    margin-top: 12rem;
 
 
     &__body {
@@ -619,6 +621,7 @@ main{
 .card_coffee {
 
     margin-top: 228px;
+    padding: 0 20px;
 
     &__title {
         h1{
@@ -628,13 +631,112 @@ main{
         }
 
         p{
-            @include p;
+            @include p; 
             margin: 0;
             margin-top: 24px;
             text-align: center;
         }
     }
+
+    &__card-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        margin-top: 104px;
+    }
+
+    &__items {
+    display: flex;
+    align-items: center;
+    margin-top: -60px;
+    }
+
+    &__image {
+        img{
+            width: 100%;
+        }
+    }
+
+    &__name {
+        h1{
+            margin: 0;
+            font-size: 40px;
+            line-height: 44px;
+        }
+        
+        span{
+            margin: 0;
+            margin-top: 8px;
+            color: #64646A;
+            line-height: 28px;
+        }
+    }
 }
+
+.card_coffee__column{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        to bottom right, /* Измененное направление градиента */
+        rgb(255, 255, 255,100%) 0%,
+        rgb(255, 255, 255,0%) 100%);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        padding: 0 30px;
+    
+}
+
+.card_coffee__text{
+        p{
+            color: #64646A;
+            margin-top: 20px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        
+}
+
+.card_coffee__price{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+
+        span{
+            color: black;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        a{
+            @include button;
+            color: white;
+            padding: 15px 30px;
+        }
+}
+
+
+@media screen and (max-width:1350px) {
+    .card_coffee__column{
+        margin-top: 5rem;
+        
+    }
+
+    .card_coffee__items{
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    
+}
+
+
+
+
 
 
 
