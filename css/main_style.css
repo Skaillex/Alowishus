@@ -643,6 +643,11 @@ main {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 0 30px;
+  transition: anim 2s ease;
+}
+.card_coffee__column:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
 }
 
 .card_coffee__text p {
@@ -689,6 +694,13 @@ main {
   }
   .card_coffee__items {
     flex-direction: column;
-    align-self: flex-start;
+    align-items: flex-start;
+  }
+  .card_coffee__column {
+    transition: none;
+  }
+  .card_coffee__column:hover {
+    transform: none;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
   }
 }/*# sourceMappingURL=main_style.css.map */
