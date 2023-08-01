@@ -619,9 +619,17 @@ main{
 
 
 .card_coffee {
-
+    position: relative;
     margin-top: 228px;
     padding: 0 20px;
+    z-index: 2;
+
+    &__background{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
 
     &__title {
         h1{
@@ -730,8 +738,15 @@ main{
 
 
 @media screen and (max-width:1350px) {
+
+    .card_coffee{
+        &__background{
+            display: none;
+        }
+    }
+
     .card_coffee__column{
-        margin-top: 5rem;
+        margin-top: 3rem;
         
     }
 
@@ -751,10 +766,26 @@ main{
             rgb(255, 255, 255,0%) 100%);
             
         }
-    }
-
-    
+    } 
 }
+
+.reviews {
+
+    &__backgound {}
+}
+.reviews_body {
+
+    &__card {}
+
+    &__info {}
+}
+.reviews_title {
+}
+.reviews_estimation {
+}
+.reviews_scroll {
+} 
+
 
 
 

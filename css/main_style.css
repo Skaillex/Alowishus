@@ -590,8 +590,16 @@ main {
   }
 }
 .card_coffee {
+  position: relative;
   margin-top: 228px;
   padding: 0 20px;
+  z-index: 2;
+}
+.card_coffee__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 .card_coffee__title h1 {
   font-weight: 800;
@@ -689,8 +697,11 @@ main {
 }
 
 @media screen and (max-width: 1350px) {
+  .card_coffee__background {
+    display: none;
+  }
   .card_coffee__column {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .card_coffee__items {
     flex-direction: column;
