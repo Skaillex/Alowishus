@@ -646,7 +646,7 @@ main {
   transition: anim 2s ease;
 }
 .card_coffee__column:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-image: linear-gradient(to bottom right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
 }
 
