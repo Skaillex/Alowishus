@@ -404,6 +404,10 @@ header{
             padding: 10px 30px;
             text-transform: uppercase;
         }
+
+        &:hover img{
+            filter: hue-rotate(180deg);
+        }
     }
 }
 
