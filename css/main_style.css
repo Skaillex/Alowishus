@@ -546,7 +546,7 @@ header {
     width: 600px;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .instant_coffee__background {
     display: none;
   }
@@ -560,6 +560,8 @@ header {
   }
   .instant_coffee_body__info {
     width: 40em;
+    margin: 0 auto;
+    text-align: center !important;
   }
   .instant_coffee_body__info h1 {
     font-weight: 800;
@@ -582,6 +584,7 @@ header {
     width: 15em;
     margin-top: 60px;
     color: white;
+    margin: 60px auto;
     padding: 15px 30px;
   }
   .instant_coffee_body__info a:hover {

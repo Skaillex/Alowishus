@@ -580,7 +580,7 @@ header{
     }
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1400px) {
 
     .instant_coffee__background{
         display: none;
@@ -601,6 +601,8 @@ header{
         &__info {
     
             width: 40em;
+            margin: 0 auto;
+            text-align: center!important;
     
             h1{
                 @include h1;
@@ -619,7 +621,8 @@ header{
                 width:15em;
                 margin-top: 60px;
                 color: white;
-                padding: 15px 30px;
+                margin: 60px auto;
+                padding: 15px 30px; 
             }
         }
     }
