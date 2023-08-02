@@ -723,6 +723,7 @@ main {
   bottom: 0;
   right: 0;
   z-index: 1;
+  width: 10%;
 }
 .reviews__background img {
   width: 100%;
@@ -760,8 +761,8 @@ main {
   border-radius: 16px;
   min-width: 25rem;
   max-width: 25rem;
-  min-height: 35rem;
-  max-height: 35rem;
+  min-height: 34rem;
+  max-height: 34rem;
 }
 .card__girl {
   width: 100%;
