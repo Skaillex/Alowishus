@@ -8,6 +8,10 @@ body {
   background-color: #EEEFF1;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 a {
   text-decoration: none;
 }
